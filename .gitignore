@@ -1,7 +1,13 @@
 # Prerequisites
 *.d
 
+# MSVS project files
+*.vcxproj
+*.filters
+*.user
+
 # Object files
+obj/
 *.o
 *.ko
 *.obj
@@ -17,6 +23,7 @@
 *.pch
 
 # Libraries
+lib/
 *.lib
 *.a
 *.la
