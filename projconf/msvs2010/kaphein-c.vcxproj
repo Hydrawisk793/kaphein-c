@@ -65,6 +65,10 @@
     <ClInclude Include="..\..\include\kaphein\nes\RP2A03Apu.h" />
     <ClInclude Include="..\..\include\kaphein\nes\RP2C02.h" />
   </ItemGroup>
+  <ItemGroup>
+    <None Include="..\..\LICENSE" />
+    <None Include="..\..\README.md" />
+  </ItemGroup>
   <PropertyGroup Label="Globals">
     <ProjectGuid>{CF9849CF-EC7B-4FD8-B9E0-B09E9958C5C7}</ProjectGuid>
     <RootNamespace>kaphein-c</RootNamespace>

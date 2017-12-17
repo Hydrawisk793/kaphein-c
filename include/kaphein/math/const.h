@@ -39,12 +39,12 @@
 /**
  *  @since 2016-06-18
  */
-#define kphnMathDeg2Rad (KAPHEIN_MATH_PI / 180.0)
+#define kphnMathDeg2Rad (kphnMathPi / 180.0)
 
 /**
  *  @since 2016-06-18
  */
-#define kphnMathRad2Deg (180.0 / KAPHEIN_MATH_PI)
+#define kphnMathRad2Deg (180.0 / kphnMathPi)
 
 /**
  *  @since 2016-06-18
