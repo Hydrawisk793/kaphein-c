@@ -30,6 +30,16 @@
 
 KAPHEIN_PP_C_LINKAGE_BEGIN()
 
+/**
+ *  @brief Encodes an array of plain bytes and outputs a base64-encoded string.
+ *  @param pBytes
+ *  @param byteCount
+ *  @param pBase64StrOut
+ *  @param base64BufferSize
+ *  @param pBase64StrLenOut
+ *  @return An error code returned by this function.
+ *  @since 2017-05-13
+ */
 KAPHEIN_PP_DLL_API
 int kphnNcodBytesToBase64(
     const uint8_t* pBytes
@@ -39,6 +49,16 @@ int kphnNcodBytesToBase64(
     , size_t* pBase64StrLenOut
 );
 
+/**
+ *  @brief Decodes a base64-encoded string and outputs an array of plain bytes.
+ *  @param base64Str
+ *  @param base64StrLen
+ *  @param bytesOut
+ *  @param byteBufferSize
+ *  @param byteCountOut
+ *  @return An error code returned by this function.
+ *  @since 2017-05-13
+ */
 KAPHEIN_PP_DLL_API
 int kphnNcodBase64ToBytes(
     const char* base64Str

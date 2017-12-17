@@ -32,7 +32,7 @@ KAPHEIN_PP_C_LINKAGE_BEGIN()
 
 /**
  *  @brief Converts an UCS-4 string to an UTF-8 encoded string.
- *  @since 2017-07-18
+ *  @since 2017-05-13
  *  @version 2017-12-10
  */
 KAPHEIN_PP_DLL_API
@@ -46,7 +46,7 @@ int kphnNcodUcs4ToUtf8(
 
 /**
  *  @brief Converts an UTF-8 encoded string to an UCS-4 string.
- *  @since 2017-07-18
+ *  @since 2017-05-13
  *  @version 2017-12-10
  */
 KAPHEIN_PP_DLL_API
@@ -60,7 +60,7 @@ int kphnNcodUtf8ToUcs4(
 
 /**
  *  @brief Converts an UCS-4 string to an UTF-16 encoded string.
- *  @since 2017-12-10
+ *  @since 2017-05-13
  *  @version 2017-12-10
  */
 KAPHEIN_PP_DLL_API
@@ -74,7 +74,7 @@ int kphnNcodUcs4ToUtf16(
 
 /**
  *  @brief Converts an UTF-16 encoded string to an UCS-4 string.
- *  @since 2017-12-10
+ *  @since 2017-05-13
  *  @version 2017-12-10
  */
 KAPHEIN_PP_DLL_API

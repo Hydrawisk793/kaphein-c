@@ -28,6 +28,9 @@
 
 #include "Vec3f.h"
 
+/**
+ *  @since 2016-06-18
+ */
 struct kphnMathQuatf
 {
     union

@@ -28,6 +28,9 @@
 
 #include "kaphein/c/math/Vec3f.h"
 
+/**
+ *  @since 2016-06-18
+ */
 struct kphnGeomLineSeg
 {
     struct kphnMathVec3f startPoint;

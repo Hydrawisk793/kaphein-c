@@ -28,6 +28,9 @@
 
 #include "kaphein/c/math/Vec3f.h"
 
+/**
+ *  @since 2016-06-18
+ */
 struct kphnGeomRay
 {
     struct kphnMathVec3f point;
