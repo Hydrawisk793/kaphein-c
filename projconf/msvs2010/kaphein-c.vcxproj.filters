@@ -15,180 +15,174 @@
     <Filter Include="src\kaphein">
       <UniqueIdentifier>{11024220-2382-4e97-bc95-655b40b3b433}</UniqueIdentifier>
     </Filter>
-    <Filter Include="include\kaphein\c">
-      <UniqueIdentifier>{4411f4d8-b3e9-4d2a-965c-40ff26281670}</UniqueIdentifier>
-    </Filter>
-    <Filter Include="src\kaphein\c">
-      <UniqueIdentifier>{259b1963-0970-45c6-a7f9-ced104007386}</UniqueIdentifier>
-    </Filter>
-    <Filter Include="include\kaphein\c\mem">
-      <UniqueIdentifier>{9f01c6da-f978-4523-8607-12f6568ac0a2}</UniqueIdentifier>
-    </Filter>
-    <Filter Include="include\kaphein\c\math">
-      <UniqueIdentifier>{6654f07d-f1b9-4355-9203-052bbef0fd59}</UniqueIdentifier>
-    </Filter>
-    <Filter Include="src\kaphein\c\mem">
-      <UniqueIdentifier>{20182edd-f7c6-47ca-80b4-06b1f3e1cd9a}</UniqueIdentifier>
-    </Filter>
-    <Filter Include="src\kaphein\c\math">
-      <UniqueIdentifier>{ad9f7b64-b7f2-423d-9bd2-1f33cc79a4db}</UniqueIdentifier>
-    </Filter>
-    <Filter Include="include\kaphein\c\coll">
+    <Filter Include="include\kaphein\coll">
       <UniqueIdentifier>{df0e7a45-e0a4-40d4-9261-2d4a8025e21e}</UniqueIdentifier>
     </Filter>
-    <Filter Include="src\kaphein\c\coll">
-      <UniqueIdentifier>{35271a62-8ee1-493a-817b-ea2e29b1ef2d}</UniqueIdentifier>
-    </Filter>
-    <Filter Include="include\kaphein\c\ncod">
-      <UniqueIdentifier>{22b4435c-713a-4836-9d59-1ff91b4dcac7}</UniqueIdentifier>
-    </Filter>
-    <Filter Include="src\kaphein\c\ncod">
-      <UniqueIdentifier>{337b65ce-e7c4-4cd4-8016-601f8affdd5f}</UniqueIdentifier>
-    </Filter>
-    <Filter Include="include\kaphein\c\geom">
+    <Filter Include="include\kaphein\geom">
       <UniqueIdentifier>{5a110632-cd51-4582-9882-21842348f00a}</UniqueIdentifier>
     </Filter>
-    <Filter Include="src\kaphein\c\geom">
-      <UniqueIdentifier>{1eab4ecd-9264-4002-b09a-d4b3b2fb7d07}</UniqueIdentifier>
+    <Filter Include="include\kaphein\math">
+      <UniqueIdentifier>{6654f07d-f1b9-4355-9203-052bbef0fd59}</UniqueIdentifier>
     </Filter>
-    <Filter Include="include\kaphein\c\nes">
+    <Filter Include="include\kaphein\mem">
+      <UniqueIdentifier>{9f01c6da-f978-4523-8607-12f6568ac0a2}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="include\kaphein\ncod">
+      <UniqueIdentifier>{22b4435c-713a-4836-9d59-1ff91b4dcac7}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="include\kaphein\nes">
       <UniqueIdentifier>{4e7128e5-c168-4934-9eef-7fd9c71f43a7}</UniqueIdentifier>
     </Filter>
-    <Filter Include="src\kaphein\c\nes">
+    <Filter Include="src\kaphein\coll">
+      <UniqueIdentifier>{35271a62-8ee1-493a-817b-ea2e29b1ef2d}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\kaphein\nes">
       <UniqueIdentifier>{ddd82824-fccb-43eb-abbb-97c7bc5de8e2}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\kaphein\geom">
+      <UniqueIdentifier>{1eab4ecd-9264-4002-b09a-d4b3b2fb7d07}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\kaphein\math">
+      <UniqueIdentifier>{ad9f7b64-b7f2-423d-9bd2-1f33cc79a4db}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\kaphein\mem">
+      <UniqueIdentifier>{20182edd-f7c6-47ca-80b4-06b1f3e1cd9a}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\kaphein\ncod">
+      <UniqueIdentifier>{337b65ce-e7c4-4cd4-8016-601f8affdd5f}</UniqueIdentifier>
     </Filter>
   </ItemGroup>
   <ItemGroup>
-    <ClCompile Include="..\..\src\kaphein\c\coll\func.c">
-      <Filter>src\kaphein\c\coll</Filter>
+    <ClCompile Include="..\..\src\kaphein\coll\func.c">
+      <Filter>src\kaphein\coll</Filter>
     </ClCompile>
-    <ClCompile Include="..\..\src\kaphein\c\coll\ListStack.c">
-      <Filter>src\kaphein\c\coll</Filter>
+    <ClCompile Include="..\..\src\kaphein\coll\ListStack.c">
+      <Filter>src\kaphein\coll</Filter>
     </ClCompile>
-    <ClCompile Include="..\..\src\kaphein\c\coll\TreeSet.c">
-      <Filter>src\kaphein\c\coll</Filter>
+    <ClCompile Include="..\..\src\kaphein\coll\TreeSet.c">
+      <Filter>src\kaphein\coll</Filter>
     </ClCompile>
-    <ClCompile Include="..\..\src\kaphein\c\math\Complexf.c">
-      <Filter>src\kaphein\c\math</Filter>
+    <ClCompile Include="..\..\src\kaphein\math\Complexf.c">
+      <Filter>src\kaphein\math</Filter>
     </ClCompile>
-    <ClCompile Include="..\..\src\kaphein\c\math\func.c">
-      <Filter>src\kaphein\c\math</Filter>
+    <ClCompile Include="..\..\src\kaphein\math\func.c">
+      <Filter>src\kaphein\math</Filter>
     </ClCompile>
-    <ClCompile Include="..\..\src\kaphein\c\math\Quatf.c">
-      <Filter>src\kaphein\c\math</Filter>
+    <ClCompile Include="..\..\src\kaphein\math\Quatf.c">
+      <Filter>src\kaphein\math</Filter>
     </ClCompile>
-    <ClCompile Include="..\..\src\kaphein\c\math\Vec3.c">
-      <Filter>src\kaphein\c\math</Filter>
+    <ClCompile Include="..\..\src\kaphein\math\Vec3.c">
+      <Filter>src\kaphein\math</Filter>
     </ClCompile>
-    <ClCompile Include="..\..\src\kaphein\c\mem\FscPool.c">
-      <Filter>src\kaphein\c\mem</Filter>
+    <ClCompile Include="..\..\src\kaphein\mem\FscPool.c">
+      <Filter>src\kaphein\mem</Filter>
     </ClCompile>
-    <ClCompile Include="..\..\src\kaphein\c\mem\func.c">
-      <Filter>src\kaphein\c\mem</Filter>
+    <ClCompile Include="..\..\src\kaphein\mem\func.c">
+      <Filter>src\kaphein\mem</Filter>
     </ClCompile>
-    <ClCompile Include="..\..\src\kaphein\c\mem\VscPool.c">
-      <Filter>src\kaphein\c\mem</Filter>
+    <ClCompile Include="..\..\src\kaphein\mem\VscPool.c">
+      <Filter>src\kaphein\mem</Filter>
     </ClCompile>
-    <ClCompile Include="..\..\src\kaphein\c\ncod\base64.c">
-      <Filter>src\kaphein\c\ncod</Filter>
+    <ClCompile Include="..\..\src\kaphein\ncod\base64.c">
+      <Filter>src\kaphein\ncod</Filter>
     </ClCompile>
-    <ClCompile Include="..\..\src\kaphein\c\ncod\cp949.c">
-      <Filter>src\kaphein\c\ncod</Filter>
+    <ClCompile Include="..\..\src\kaphein\ncod\cp949.c">
+      <Filter>src\kaphein\ncod</Filter>
     </ClCompile>
-    <ClCompile Include="..\..\src\kaphein\c\ncod\utf.c">
-      <Filter>src\kaphein\c\ncod</Filter>
+    <ClCompile Include="..\..\src\kaphein\ncod\utf.c">
+      <Filter>src\kaphein\ncod</Filter>
     </ClCompile>
-    <ClCompile Include="..\..\src\kaphein\c\nes\RP2A03.c">
-      <Filter>src\kaphein\c\nes</Filter>
+    <ClCompile Include="..\..\src\kaphein\nes\RP2A03.c">
+      <Filter>src\kaphein\nes</Filter>
     </ClCompile>
-    <ClCompile Include="..\..\src\kaphein\c\nes\RP2A03Apu.c">
-      <Filter>src\kaphein\c\nes</Filter>
+    <ClCompile Include="..\..\src\kaphein\nes\RP2A03Apu.c">
+      <Filter>src\kaphein\nes</Filter>
     </ClCompile>
-    <ClCompile Include="..\..\src\kaphein\c\nes\RP2C02.c">
-      <Filter>src\kaphein\c\nes</Filter>
+    <ClCompile Include="..\..\src\kaphein\nes\RP2C02.c">
+      <Filter>src\kaphein\nes</Filter>
     </ClCompile>
   </ItemGroup>
   <ItemGroup>
-    <ClInclude Include="..\..\include\kaphein\c\coll\func.h">
-      <Filter>include\kaphein\c\coll</Filter>
+    <ClInclude Include="..\..\include\kaphein\coll\func.h">
+      <Filter>include\kaphein\coll</Filter>
     </ClInclude>
-    <ClInclude Include="..\..\include\kaphein\c\coll\ListStack.h">
-      <Filter>include\kaphein\c\coll</Filter>
+    <ClInclude Include="..\..\include\kaphein\coll\ListStack.h">
+      <Filter>include\kaphein\coll</Filter>
     </ClInclude>
-    <ClInclude Include="..\..\include\kaphein\c\coll\TreeSet.h">
-      <Filter>include\kaphein\c\coll</Filter>
+    <ClInclude Include="..\..\include\kaphein\coll\TreeSet.h">
+      <Filter>include\kaphein\coll</Filter>
     </ClInclude>
-    <ClInclude Include="..\..\include\kaphein\c\geom\Aabb.h">
-      <Filter>include\kaphein\c\geom</Filter>
+    <ClInclude Include="..\..\include\kaphein\geom\Aabb.h">
+      <Filter>include\kaphein\geom</Filter>
     </ClInclude>
-    <ClInclude Include="..\..\include\kaphein\c\geom\Capsule.h">
-      <Filter>include\kaphein\c\geom</Filter>
+    <ClInclude Include="..\..\include\kaphein\geom\Capsule.h">
+      <Filter>include\kaphein\geom</Filter>
     </ClInclude>
-    <ClInclude Include="..\..\include\kaphein\c\geom\LineSeg.h">
-      <Filter>include\kaphein\c\geom</Filter>
+    <ClInclude Include="..\..\include\kaphein\geom\LineSeg.h">
+      <Filter>include\kaphein\geom</Filter>
     </ClInclude>
-    <ClInclude Include="..\..\include\kaphein\c\geom\Mpr.h">
-      <Filter>include\kaphein\c\geom</Filter>
+    <ClInclude Include="..\..\include\kaphein\geom\Mpr.h">
+      <Filter>include\kaphein\geom</Filter>
     </ClInclude>
-    <ClInclude Include="..\..\include\kaphein\c\geom\Obb.h">
-      <Filter>include\kaphein\c\geom</Filter>
+    <ClInclude Include="..\..\include\kaphein\geom\Obb.h">
+      <Filter>include\kaphein\geom</Filter>
     </ClInclude>
-    <ClInclude Include="..\..\include\kaphein\c\geom\Plane.h">
-      <Filter>include\kaphein\c\geom</Filter>
+    <ClInclude Include="..\..\include\kaphein\geom\Plane.h">
+      <Filter>include\kaphein\geom</Filter>
     </ClInclude>
-    <ClInclude Include="..\..\include\kaphein\c\geom\Ray.h">
-      <Filter>include\kaphein\c\geom</Filter>
+    <ClInclude Include="..\..\include\kaphein\geom\Ray.h">
+      <Filter>include\kaphein\geom</Filter>
     </ClInclude>
-    <ClInclude Include="..\..\include\kaphein\c\geom\Sphere.h">
-      <Filter>include\kaphein\c\geom</Filter>
+    <ClInclude Include="..\..\include\kaphein\geom\Sphere.h">
+      <Filter>include\kaphein\geom</Filter>
     </ClInclude>
-    <ClInclude Include="..\..\include\kaphein\c\geom\Triangle.h">
-      <Filter>include\kaphein\c\geom</Filter>
+    <ClInclude Include="..\..\include\kaphein\geom\Triangle.h">
+      <Filter>include\kaphein\geom</Filter>
     </ClInclude>
-    <ClInclude Include="..\..\include\kaphein\c\math\Complexf.h">
-      <Filter>include\kaphein\c\math</Filter>
+    <ClInclude Include="..\..\include\kaphein\math\Complexf.h">
+      <Filter>include\kaphein\math</Filter>
     </ClInclude>
-    <ClInclude Include="..\..\include\kaphein\c\math\const.h">
-      <Filter>include\kaphein\c\math</Filter>
+    <ClInclude Include="..\..\include\kaphein\math\const.h">
+      <Filter>include\kaphein\math</Filter>
     </ClInclude>
-    <ClInclude Include="..\..\include\kaphein\c\math\func.h">
-      <Filter>include\kaphein\c\math</Filter>
+    <ClInclude Include="..\..\include\kaphein\math\func.h">
+      <Filter>include\kaphein\math</Filter>
     </ClInclude>
-    <ClInclude Include="..\..\include\kaphein\c\math\Quatf.h">
-      <Filter>include\kaphein\c\math</Filter>
+    <ClInclude Include="..\..\include\kaphein\math\Quatf.h">
+      <Filter>include\kaphein\math</Filter>
     </ClInclude>
-    <ClInclude Include="..\..\include\kaphein\c\math\Vec3f.h">
-      <Filter>include\kaphein\c\math</Filter>
+    <ClInclude Include="..\..\include\kaphein\math\Vec3f.h">
+      <Filter>include\kaphein\math</Filter>
     </ClInclude>
-    <ClInclude Include="..\..\include\kaphein\c\mem\FscPool.h">
-      <Filter>include\kaphein\c\mem</Filter>
+    <ClInclude Include="..\..\include\kaphein\mem\FscPool.h">
+      <Filter>include\kaphein\mem</Filter>
     </ClInclude>
-    <ClInclude Include="..\..\include\kaphein\c\mem\func.h">
-      <Filter>include\kaphein\c\mem</Filter>
+    <ClInclude Include="..\..\include\kaphein\mem\func.h">
+      <Filter>include\kaphein\mem</Filter>
     </ClInclude>
-    <ClInclude Include="..\..\include\kaphein\c\mem\VscPool.h">
-      <Filter>include\kaphein\c\mem</Filter>
+    <ClInclude Include="..\..\include\kaphein\mem\VscPool.h">
+      <Filter>include\kaphein\mem</Filter>
     </ClInclude>
-    <ClInclude Include="..\..\include\kaphein\c\ncod\base64.h">
-      <Filter>include\kaphein\c\ncod</Filter>
+    <ClInclude Include="..\..\include\kaphein\ncod\base64.h">
+      <Filter>include\kaphein\ncod</Filter>
     </ClInclude>
-    <ClInclude Include="..\..\include\kaphein\c\ncod\cp949.h">
-      <Filter>include\kaphein\c\ncod</Filter>
+    <ClInclude Include="..\..\include\kaphein\ncod\cp949.h">
+      <Filter>include\kaphein\ncod</Filter>
     </ClInclude>
-    <ClInclude Include="..\..\include\kaphein\c\ncod\utf.h">
-      <Filter>include\kaphein\c\ncod</Filter>
+    <ClInclude Include="..\..\include\kaphein\ncod\utf.h">
+      <Filter>include\kaphein\ncod</Filter>
     </ClInclude>
-    <ClInclude Include="..\..\include\kaphein\c\nes\RP2A03.h">
-      <Filter>include\kaphein\c\nes</Filter>
+    <ClInclude Include="..\..\include\kaphein\nes\RP2A03.h">
+      <Filter>include\kaphein\nes</Filter>
     </ClInclude>
-    <ClInclude Include="..\..\include\kaphein\c\nes\RP2A03Apu.h">
-      <Filter>include\kaphein\c\nes</Filter>
+    <ClInclude Include="..\..\include\kaphein\nes\RP2A03Apu.h">
+      <Filter>include\kaphein\nes</Filter>
     </ClInclude>
-    <ClInclude Include="..\..\include\kaphein\c\nes\RP2C02.h">
-      <Filter>include\kaphein\c\nes</Filter>
+    <ClInclude Include="..\..\include\kaphein\nes\RP2C02.h">
+      <Filter>include\kaphein\nes</Filter>
     </ClInclude>
-    <ClInclude Include="..\..\include\kaphein\c\def.h">
-      <Filter>include\kaphein\c</Filter>
+    <ClInclude Include="..\..\include\kaphein\def.h">
+      <Filter>include\kaphein</Filter>
     </ClInclude>
   </ItemGroup>
 </Project>
