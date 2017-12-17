@@ -26,14 +26,29 @@
 #ifndef KAPHINE_MATH_CONST_H
 #define KAPHINE_MATH_CONST_H
 
+/**
+ *  @since 2016-06-18
+ */
 #define kphnMathE (2.71828182845904523536)
 
+/**
+ *  @since 2016-06-18
+ */
 #define kphnMathPi (3.14159265358979323846)
 
+/**
+ *  @since 2016-06-18
+ */
 #define kphnMathDeg2Rad (KAPHEIN_MATH_PI / 180.0)
 
+/**
+ *  @since 2016-06-18
+ */
 #define kphnMathRad2Deg (180.0 / KAPHEIN_MATH_PI)
 
+/**
+ *  @since 2016-06-18
+ */
 #define kphnMathSqrt2 (1.41421356237309504880)
 
 #endif
