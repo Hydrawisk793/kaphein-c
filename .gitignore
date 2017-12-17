@@ -1,10 +1,11 @@
 # Prerequisites
 *.d
 
-# MSVS project files
-*.vcxproj
-*.filters
-*.user
+# MSVS files
+#*.vcxproj
+#*.filters
+#*.user
+*.sdf
 
 # Object files
 obj/
