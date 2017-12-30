@@ -44,7 +44,7 @@ struct kphnMemVscHeader
             
             struct kphnMemVscHeader* pNext_;
             
-            size_t byteCount_;
+            kphnSizeType byteCount_;
             
             char inUse_;
         } f_;
@@ -65,7 +65,7 @@ struct kphnMemVscPool
 
     struct kphnMemVscHeader* pCurrent_;
 
-    size_t blockSize_;
+    kphnSizeType blockSize_;
 };
 
 /**
@@ -78,7 +78,7 @@ struct kphnMemVscPool
 KAPHEIN_PP_DLL_API
 int kphnMemVscPoolConstruct(
     struct kphnMemVscPool* pPool
-    , size_t blockSize
+    , kphnSizeType blockSize
 );
 
 /**
@@ -102,7 +102,7 @@ void kphnMemVscPoolDestruct(
 KAPHEIN_PP_DLL_API
 void* kphnMemVscPoolAllocate(
     struct kphnMemVscPool* pPool
-    , size_t byteCount
+    , kphnSizeType byteCount
 );
 
 /**
@@ -116,6 +116,7 @@ KAPHEIN_PP_DLL_API
 int kphnMemVscPoolFree(
     struct kphnMemVscPool* pPool
     , void* pChunk
+    , kphnSizeType byteCount
 );
 
 KAPHEIN_PP_C_LINKAGE_END()
