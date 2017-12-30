@@ -94,14 +94,14 @@
 #include <stddef.h>
 #include <stdint.h>
 #if SIZE_MAX >= UINT64_MAX
-    typedef uint64_t kaphein_SizeType;
-    typedef int64_t kaphein_SSizeType;
+    typedef uint64_t kphnSizeType;
+    typedef int64_t kphnSSizeType;
 #elif SIZE_MAX >= UINT32_MAX
-    typedef uint32_t kaphein_SizeType;
-    typedef int32_t kaphein_SSizeType;
+    typedef uint32_t kphnSizeType;
+    typedef int32_t kphnSSizeType;
 #else
-    typedef uint16_t kaphein_SizeType;
-    typedef int16_t kaphein_SSizeType;
+    typedef uint16_t kphnSizeType;
+    typedef int16_t kphnSSizeType;
 #endif
 
 enum kaphein_ErrorCode
