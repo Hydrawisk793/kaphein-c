@@ -31,24 +31,41 @@
 KAPHEIN_PP_C_LINKAGE_BEGIN()
 
 /**
- *  @brief A struct for representing variable-size chunk header.
- *  @deial All members of this struct are considered INVISIBLE.
- *      <br/> You should NOT rely on these members.
- *  @since 2016-06-18
+ *  @brief A struct that contains allocator information.
+ *  @since 2017-12-30
  */
 struct kphnMemAllocator
 {
+    /**
+     *  @brief A pointer to allocate function of an allocator.
+     *  <br/>Allocates a memory block with specified allocator and size of the block.
+     *  @param pAllocator A pointer to an allocator struct.
+     *  @param byteCount The size of memory block to be allocated.
+     *  @return A non-null pointer to the allocated memory block, null pointer otherwise.
+     */
     void* (*allocate) (
         void* pAllocator
         , kphnSizeType byteCount
     );
     
-    void* (*deallocate) (
+    /**
+     *  @brief A pointer to deallocate function of an allocator.
+     *  <br/>Deallocates the memory block allocated by specified allocator.
+     *  @param pAllocator A pointer to an allocator struct.
+     *  @param pMem The memory block allocated by the specified allocator.
+     *  @param byteCount The size of the memory block.
+     *  <br/>This must be equal to the exact size of the memory block. If not so, the behaviour is undefined.
+     *  @return An error code returned by this function.
+     */
+    int (*deallocate) (
         void* pAllocator
         , void* pMem
         , kphnSizeType byteCount
     );
     
+    /**
+     *  @brief A pointer to an allocator struct.
+     */
     void* pAllocator;
 };
 
