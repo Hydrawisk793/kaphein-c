@@ -36,16 +36,16 @@ struct kphnMemFscPool
 
     void* pBlock_;
 
-    size_t blockSize_;
+    kphnSizeType blockSize_;
 
-    size_t chunkSize_;
+    kphnSizeType chunkSize_;
 };
 
 KAPHEIN_PP_DLL_API
 int kphnMemFscPoolConstruct(
     struct kphnMemFscPool* pPool
-    , size_t chunkSize
-    , size_t chunkCount
+    , kphnSizeType chunkSize
+    , kphnSizeType chunkCount
 );
 
 KAPHEIN_PP_DLL_API
@@ -54,13 +54,14 @@ void kphnMemFscPoolDestruct(
 );
 
 void* kphnMemFscPoolAllocate(
-    struct kphnMemFscPool* pPool
-    , size_t byteCount
+    void* pPool
+    , kphnSizeType byteCount
 );
 
 int kphnMemFscPoolFree(
-    struct kphnMemFscPool* pPool
+    void* pPool
     , void* pChunk
+    , kphnSizeType byteCount
 );
 
 KAPHEIN_PP_C_LINKAGE_END()
