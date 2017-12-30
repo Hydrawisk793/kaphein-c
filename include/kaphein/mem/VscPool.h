@@ -101,7 +101,7 @@ void kphnMemVscPoolDestruct(
  */
 KAPHEIN_PP_DLL_API
 void* kphnMemVscPoolAllocate(
-    struct kphnMemVscPool* pPool
+    void* pPool
     , kphnSizeType byteCount
 );
 
@@ -114,7 +114,7 @@ void* kphnMemVscPoolAllocate(
  */
 KAPHEIN_PP_DLL_API
 int kphnMemVscPoolFree(
-    struct kphnMemVscPool* pPool
+    void* pPool
     , void* pChunk
     , kphnSizeType byteCount
 );
