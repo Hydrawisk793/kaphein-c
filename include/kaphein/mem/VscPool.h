@@ -28,6 +28,8 @@
 
 #include "kaphein/def.h"
 
+KAPHEIN_PP_C_LINKAGE_BEGIN()
+
 /**
  *  @brief A struct for representing variable-size chunk header.
  *  @deial All members of this struct are considered INVISIBLE.
