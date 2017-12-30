@@ -113,7 +113,7 @@ static struct kphnMemVscHeader* findAvailable(
 }
 
 void* kphnMemVscPoolAllocate(
-    struct kphnMemVscPool* pPool
+    void* pPool
     , size_t byteCount
 )
 {
@@ -204,12 +204,15 @@ static struct kphnMemVscHeader* mergeHeaders(
 }
 
 int kphnMemVscPoolFree(
-    struct kphnMemVscPool* pPool
+    void* pPool
     , void* pChunk
+    , kphnSizeType byteCount
 )
 {
     struct kphnMemVscHeader* pHeader;
     char* pHeaderBytes;
+
+    byteCount;
 
     pHeaderBytes = (char*)pChunk - sizeof(struct kphnMemVscHeader);
     if(
