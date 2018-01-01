@@ -1,0 +1,207 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|Win32">
+      <Configuration>Debug</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|Win32">
+      <Configuration>Release</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Debug|x64">
+      <Configuration>Debug</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|x64">
+      <Configuration>Release</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <VCProjectVersion>15.0</VCProjectVersion>
+    <ProjectGuid>{87F73D03-95B3-4A31-B3D1-EE9CE7DFAB66}</ProjectGuid>
+    <RootNamespace>kapheinc</RootNamespace>
+    <WindowsTargetPlatformVersion>10.0.16299.0</WindowsTargetPlatformVersion>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
+    <ConfigurationType>DynamicLibrary</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <PlatformToolset>v141</PlatformToolset>
+    <CharacterSet>MultiByte</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
+    <ConfigurationType>DynamicLibrary</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <PlatformToolset>v141</PlatformToolset>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <CharacterSet>MultiByte</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'" Label="Configuration">
+    <ConfigurationType>DynamicLibrary</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <PlatformToolset>v141</PlatformToolset>
+    <CharacterSet>MultiByte</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'" Label="Configuration">
+    <ConfigurationType>DynamicLibrary</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <PlatformToolset>v141</PlatformToolset>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <CharacterSet>MultiByte</CharacterSet>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Label="Shared">
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <OutDir>$(ProjectDir)..\..\lib\$(Platform)\$(Configuration)\</OutDir>
+    <IntDir>$(ProjectDir)..\..\obj\$(Platform)\$(Configuration)\</IntDir>
+    <IncludePath>$(ProjectDir)..\..\include;$(IncludePath)</IncludePath>
+    <SourcePath>$(ProjectDir)..\..\src;$(SourcePath)</SourcePath>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <OutDir>$(ProjectDir)..\..\lib\$(Platform)\$(Configuration)\</OutDir>
+    <IntDir>$(ProjectDir)..\..\obj\$(Platform)\$(Configuration)\</IntDir>
+    <IncludePath>$(ProjectDir)..\..\include;$(IncludePath)</IncludePath>
+    <SourcePath>$(ProjectDir)..\..\src;$(SourcePath)</SourcePath>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <OutDir>$(ProjectDir)..\..\lib\$(Platform)\$(Configuration)\</OutDir>
+    <IntDir>$(ProjectDir)..\..\obj\$(Platform)\$(Configuration)\</IntDir>
+    <IncludePath>$(ProjectDir)..\..\include;$(IncludePath)</IncludePath>
+    <SourcePath>$(ProjectDir)..\..\src;$(SourcePath)</SourcePath>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <OutDir>$(ProjectDir)..\..\lib\$(Platform)\$(Configuration)\</OutDir>
+    <IntDir>$(ProjectDir)..\..\obj\$(Platform)\$(Configuration)\</IntDir>
+    <IncludePath>$(ProjectDir)..\..\include;$(IncludePath)</IncludePath>
+    <SourcePath>$(ProjectDir)..\..\src;$(SourcePath)</SourcePath>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <ClCompile>
+      <WarningLevel>Level4</WarningLevel>
+      <Optimization>Disabled</Optimization>
+      <SDLCheck>true</SDLCheck>
+      <ConformanceMode>true</ConformanceMode>
+      <AssemblerListingLocation>$(IntDir)Dummy1\Dummy2\%(RelativeDir)</AssemblerListingLocation>
+      <ObjectFileName>$(IntDir)Dummy1\Dummy2\%(RelativeDir)</ObjectFileName>
+      <PreprocessorDefinitions>KAPHEIN_EXPORT_DLL;_MBCS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <MinimalRebuild>false</MinimalRebuild>
+    </ClCompile>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <ClCompile>
+      <WarningLevel>Level4</WarningLevel>
+      <Optimization>Disabled</Optimization>
+      <SDLCheck>true</SDLCheck>
+      <ConformanceMode>true</ConformanceMode>
+      <AssemblerListingLocation>$(IntDir)Dummy1\Dummy2\%(RelativeDir)</AssemblerListingLocation>
+      <ObjectFileName>$(IntDir)Dummy1\Dummy2\%(RelativeDir)</ObjectFileName>
+      <PreprocessorDefinitions>KAPHEIN_EXPORT_DLL;_MBCS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <MinimalRebuild>false</MinimalRebuild>
+    </ClCompile>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <ClCompile>
+      <WarningLevel>Level4</WarningLevel>
+      <Optimization>MaxSpeed</Optimization>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <SDLCheck>true</SDLCheck>
+      <ConformanceMode>true</ConformanceMode>
+      <AssemblerListingLocation>$(IntDir)Dummy1\Dummy2\%(RelativeDir)</AssemblerListingLocation>
+      <ObjectFileName>$(IntDir)Dummy1\Dummy2\%(RelativeDir)</ObjectFileName>
+      <PreprocessorDefinitions>KAPHEIN_EXPORT_DLL;_MBCS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+    </ClCompile>
+    <Link>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <ClCompile>
+      <WarningLevel>Level4</WarningLevel>
+      <Optimization>MaxSpeed</Optimization>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <SDLCheck>true</SDLCheck>
+      <ConformanceMode>true</ConformanceMode>
+      <AssemblerListingLocation>$(IntDir)Dummy1\Dummy2\%(RelativeDir)</AssemblerListingLocation>
+      <ObjectFileName>$(IntDir)Dummy1\Dummy2\%(RelativeDir)</ObjectFileName>
+      <PreprocessorDefinitions>KAPHEIN_EXPORT_DLL;_MBCS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+    </ClCompile>
+    <Link>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <ClInclude Include="..\..\include\kaphein\c\coll\func.h" />
+    <ClInclude Include="..\..\include\kaphein\c\coll\ListStack.h" />
+    <ClInclude Include="..\..\include\kaphein\c\coll\TreeSet.h" />
+    <ClInclude Include="..\..\include\kaphein\c\def.h" />
+    <ClInclude Include="..\..\include\kaphein\c\geom\Aabb.h" />
+    <ClInclude Include="..\..\include\kaphein\c\geom\Capsule.h" />
+    <ClInclude Include="..\..\include\kaphein\c\geom\LineSeg.h" />
+    <ClInclude Include="..\..\include\kaphein\c\geom\Mpr.h" />
+    <ClInclude Include="..\..\include\kaphein\c\geom\Obb.h" />
+    <ClInclude Include="..\..\include\kaphein\c\geom\Plane.h" />
+    <ClInclude Include="..\..\include\kaphein\c\geom\Ray.h" />
+    <ClInclude Include="..\..\include\kaphein\c\geom\Sphere.h" />
+    <ClInclude Include="..\..\include\kaphein\c\geom\Triangle.h" />
+    <ClInclude Include="..\..\include\kaphein\c\math\Complexf.h" />
+    <ClInclude Include="..\..\include\kaphein\c\math\const.h" />
+    <ClInclude Include="..\..\include\kaphein\c\math\func.h" />
+    <ClInclude Include="..\..\include\kaphein\c\math\Matf.h" />
+    <ClInclude Include="..\..\include\kaphein\c\math\Quatf.h" />
+    <ClInclude Include="..\..\include\kaphein\c\math\Vec3f.h" />
+    <ClInclude Include="..\..\include\kaphein\c\mem\FscPool.h" />
+    <ClInclude Include="..\..\include\kaphein\c\mem\func.h" />
+    <ClInclude Include="..\..\include\kaphein\c\mem\VscPool.h" />
+    <ClInclude Include="..\..\include\kaphein\c\mem\fwd.h" />
+    <ClInclude Include="..\..\include\kaphein\c\ncod\base64.h" />
+    <ClInclude Include="..\..\include\kaphein\c\ncod\cp949.h" />
+    <ClInclude Include="..\..\include\kaphein\c\ncod\utf.h" />
+    <ClInclude Include="..\..\include\kaphein\c\nes\RP2A03.h" />
+    <ClInclude Include="..\..\include\kaphein\c\nes\RP2A03Apu.h" />
+    <ClInclude Include="..\..\include\kaphein\c\nes\RP2C02.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="..\..\src\kaphein\c\coll\func.c" />
+    <ClCompile Include="..\..\src\kaphein\c\coll\ListStack.c" />
+    <ClCompile Include="..\..\src\kaphein\c\coll\TreeSet.c" />
+    <ClCompile Include="..\..\src\kaphein\c\math\Complexf.c" />
+    <ClCompile Include="..\..\src\kaphein\c\math\func.c" />
+    <ClCompile Include="..\..\src\kaphein\c\math\Matf.c" />
+    <ClCompile Include="..\..\src\kaphein\c\math\Quatf.c" />
+    <ClCompile Include="..\..\src\kaphein\c\math\Vec3.c" />
+    <ClCompile Include="..\..\src\kaphein\c\mem\FscPool.c" />
+    <ClCompile Include="..\..\src\kaphein\c\mem\func.c" />
+    <ClCompile Include="..\..\src\kaphein\c\mem\VscPool.c" />
+    <ClCompile Include="..\..\src\kaphein\c\ncod\base64.c" />
+    <ClCompile Include="..\..\src\kaphein\c\ncod\cp949.c" />
+    <ClCompile Include="..\..\src\kaphein\c\ncod\utf.c" />
+    <ClCompile Include="..\..\src\kaphein\c\nes\RP2A03.c" />
+    <ClCompile Include="..\..\src\kaphein\c\nes\RP2A03Apu.c" />
+    <ClCompile Include="..\..\src\kaphein\c\nes\RP2C02.c" />
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>
